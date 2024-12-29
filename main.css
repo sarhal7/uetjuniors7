@@ -1,0 +1,146 @@
+/* Base styles and resets */
+:root {
+  --color-primary: #ffffff;
+  --color-primary-dark: #166534;
+  --color-accent: #facc15;
+  --color-accent-dark: #eab308;
+  --color-text: #1f2937;
+  --color-text-light: #6b7280;
+  --color-white: #ffffff;
+}
+
+
+.navbar {
+  background: linear-gradient(70deg, #1a1414, #ea00ff, #ff7e5f);
+  background-size: 600% 600%;
+  animation: gradient 15s ease infinite;
+}
+
+* {
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.container {
+  
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Buttons */
+.btn {
+  -webkit-animation: color-change-2x 6s infinite alternate both;
+	        animation: color-change-2x 6s infinite alternate both;
+  display:inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+nav img{
+  border-radius: 150px;
+}
+.logo{
+  display: flex;
+}
+.btn-primary a{
+  text-decoration: none;
+  color: black;
+}
+.btn-primary a:hover{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.btn-primary {
+  border:2px solid rgb(0, 0, 0);
+  background-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-dark);
+  color: rgb(255, 255, 255);
+}
+
+.btn-outline {
+  border-color: var(--color-white);
+  border:2px solid white;
+  color: var(--color-white);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-white);
+  color: var(--color-text);
+}
+footer {
+  background-color: #333;
+  -webkit-animation: color-change-2x 6s infinite alternate both;
+	        animation: color-change-2x 6s infinite alternate both;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
