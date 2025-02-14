@@ -3,9 +3,7 @@
   -webkit-animation: color-change-2x 6s infinite alternate both;
 	        animation: color-change-2x 6s infinite alternate both;
   position: relative;
-  min-height: 100vh;
-  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
-  padding-top: 4rem;
+  height: 100vh;
   overflow: hidden;
 }
 
